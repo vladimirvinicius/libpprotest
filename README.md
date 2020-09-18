@@ -6,6 +6,8 @@ Nesse curso é ensinado como contribuir com projetos de código aberto
 Link para o curso [Python Pro](https://www.python.pro.br/)
 
 [![Build Status](https://travis-ci.org/vladimirvinicius/libpprotest.svg?branch=master)](https://travis-ci.org/vladimirvinicius/libpprotest)
+[![Updates](https://pyup.io/repos/github/vladimirvinicius/libpprotest/shield.svg)](https://pyup.io/repos/github/vladimirvinicius/libpprotest/)
+[![Python 3](https://pyup.io/repos/github/vladimirvinicius/libpprotest/python-3-shield.svg)](https://pyup.io/repos/github/vladimirvinicius/libpprotest/)
 
 Suportada versão 3 de Python
 

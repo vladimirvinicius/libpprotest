@@ -1,4 +1,4 @@
-name: CI
+name: CI-GA
 
 on: [pull_request]
 
@@ -20,13 +20,12 @@ jobs:
 
     - name: Lint with flake8
       run: |
-        flake8
+        pipenv run flake8
 
     - name: Test whith pytest
       run: |
-        pytest libpprotest --cov=libpprotest
+        pipenv run pytest libpprotest --cov=libpprotest
 
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v1
+    - name: Posting Coverage
       run: |
-        codecov
+        pipenv run codecov

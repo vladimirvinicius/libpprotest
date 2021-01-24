@@ -8,7 +8,7 @@ from libpprotest import github_api
 @pytest.fixture
 def avatar_url(mocker):
     resp_mock = Mock()
-    url = 'https://avatars3.githubusercontent.com/u/63666732?v=4'
+    url = 'https://avatars.githubusercontent.com/u/63666732?v=4'
     resp_mock.json.return_value = {
         'login': 'vladimirvinicius', 'id': 63666732,
         'avatar_url': url,
@@ -25,4 +25,4 @@ def test_buscar_avatar(avatar_url):
 
 def test_buscar_avatar_integracao():
     url = github_api.buscar_avatar('vladimirvinicius')
-    assert 'https://avatars3.githubusercontent.com/u/63666732?v=4' == url
+    assert 'https://avatars.githubusercontent.com/u/63666732?v=4' == url
